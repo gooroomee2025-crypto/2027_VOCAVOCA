@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VOCAVOCA</title>
+<meta name="description" content="VOCAVOCA — 매일 50단어 학습과 4지선다형 퀴즈로 완성하는 어휘 컬렉션">
+<meta name="theme-color" content="#F5F3F9">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%235A4A7A%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23F5F3F9%22 font-family=%22sans-serif%22>V</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">VOCA<span class="season">VOCA</span></div>
+      <div class="brand-sub">DAY 01-31</div>
+    </div>
+    <div class="streak-chip" id="streak-chip"></div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <a href="#/"><span class="nav-icon">⌂</span>홈</a>
+    <a href="#/words"><span class="nav-icon">▤</span>단어</a>
+    <a href="#/quiz"><span class="nav-icon">✎</span>퀴즈</a>
+    <a href="#/notes"><span class="nav-icon">★</span>오답노트</a>
+    <a href="#/settings"><span class="nav-icon">⚙</span>설정</a>
+  </nav>
+
+  <main id="view" aria-live="polite"></main>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
